@@ -1,38 +1,53 @@
 .App {
-  text-align: center;
+  background-image: url(./background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin-top: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.together{
   display: flex;
+  /* justify-content: flex-end;
+  margin-right: 150px; */
   flex-direction: column;
+  margin-left: 200px;
+}
+.inputfield{
+  padding: 10px;
+  width: 250px;
+  margin-top: 200px;
+  border: black 1px solid;
+  font-size: 15px;
+}
+button{
+  background-image: url(./add.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  margin-top: 10px;
+}
+.input{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  margin-left: 500px;
+}
+
+ul{
+  font-size: 20px;
+}
+.crossed{
+  background-color: rgb(159, 158, 158);
   color: white;
+  width: 300px;
+  -webkit-text-decoration-thickness: 1px;
+  -webkit-text-decoration-color: black;
+  -webkit-text-decoration-line: line-through;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
