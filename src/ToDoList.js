@@ -14,20 +14,32 @@ export class ToDoList extends Component{
         listArray.push(input);
         this.setState({todolist: listArray, userInput: ''}) 
      }
+     deleteItem() {
+        let listArray = this.state.todolist;
+        listArray = [];
+        this.setState({todolist: listArray})
+    }
         crossedWord(event){
             const li = event.target;
             li.classList.toggle('crossed');
         }
+onFormSubmit(e) {
+e.preventDefault();
+}
+
+
      render() {
         return(
+            <div>
         <div className='together'>
+            <form onSubmit={this.onFormSubmit}>
             <div className='input'>
                 <input className='inputfield' type="text"
                 placeholder="What are your going to do today?"
                 onChange={(event) => {this.onCahngeEvent(event.target.value)}}
                 value={this.state.userInput}/>
                 <div>
-                    <button onClick={() => this.addItem(this.state.userInput)}></button>
+                    <button className='button' onClick={() => this.addItem(this.state.userInput)}></button>
                 </div>
             </div>
             <div className='tylingstyle'>
@@ -37,7 +49,12 @@ export class ToDoList extends Component{
                     ))}
                 </ul>
                 </div>
+                </form>
         </div>
+                        <div className='buttonClose'>
+                        <button className='buttonTwo' onClick={() => this.deleteItem()}></button>
+                    </div>
+                    </div>
 
 
         )
