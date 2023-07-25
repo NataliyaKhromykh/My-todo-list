@@ -1,3 +1,27 @@
+# Name - "To do list"
+
+## Thanks to React, this project helps you to create your todo list.
+In the future I would like to make it posiible to save your todo list after refreshing your browser.
+
+### How to use this project:
+- Simply write what you're planning to do today in the input
+- Push + button or ENTER
+- You'll see your task on the left side "typed on the white paper"
+- If you've completed one of your tasks, click on the task and ir will strike out the task from your list
+- If you want to put back to the list the task you've completed, click on this task again
+- If you completed all of the tasks, click the "close" button on the right top corner of the white list
+
+#### This Project is a homework on a couse I'm taking learning React.
+I would like to share if you are learning React too. If you have any questions please write on inwd.webdesign@gmail.com
+
+##### All pictures for this project were used from following websites:
+Open [https://unsplash.com] to view the website in your browser.
+Open [https://icons8.com/icons] to view the website in your browser.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
