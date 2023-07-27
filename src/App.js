@@ -1,6 +1,6 @@
 import './App.css';
 import { ToDoList } from './ToDoList';
-import plus from './add.png'
+
 
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
     <div className='App'>
     <div>
         <ToDoList/>
-
       </div>
   </div>
 
